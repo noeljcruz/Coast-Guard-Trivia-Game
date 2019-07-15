@@ -21,7 +21,7 @@ $(document).ready(function () {
 
         function decrement() {
             seconds--;
-            $("#seconds").text(seconds);
+            $("#seconds").text(seconds + " (s)");
             if (seconds === 0) {
                 stop();
                 return;
@@ -46,16 +46,16 @@ $(document).ready(function () {
     }
 
     $("#finishedButton").click(function () {
-        var answerOne = $('input[type="radio"][name="#"]:checked').val();
-        var answerTwo = $('input[type="radio"][name="#"]:checked').val();
-        var answerThree = $('input[type="radio"][name="#"]:checked').val();
-        var answerFour = $('input[type="radio"][name="#"]:checked').val();
-        var answerFive = $('input[type="radio"][name="#"]:checked').val();
+        var answerOne = $('input[type="radio"][name="year"]:checked').val();
+        var answerTwo = $('input[type="radio"][name="mission"]:checked').val();
+        var answerThree = $('input[type="radio"][name="actor"]:checked').val();
+        var answerFour = $('input[type="radio"][name="motto"]:checked').val();
+        var answerFive = $('input[type="radio"][name="nickname"]:checked').val();
 
-        determineScore(parseInt(answerOne), 4);
-        determineScore(parseInt(answerTwo), 3);
-        determineScore(parseInt(answerThree), 4);
-        determineScore(parseInt(answerFour), 1);
+        determineScore(parseInt(answerOne), 3);
+        determineScore(parseInt(answerTwo), 1);
+        determineScore(parseInt(answerThree), 2);
+        determineScore(parseInt(answerFour), 4);
         determineScore(parseInt(answerFive), 2);
         stop();
     });
