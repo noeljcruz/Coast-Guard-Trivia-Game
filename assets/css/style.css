@@ -1,45 +1,25 @@
-/* body {
-   background-image: url("../images/analog-art-camera-390089.jpg");
-   background-position: center cover fixed;
-   background-size: 100%;
+
+body {
+   background-image: url("../images/USCGC-James-WMSL-754.jpg");
+   background-position: center fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-.main-container {
-   background: rgba(red, green, blue, alpha);
-   background-color: rgba(173 164 174);
-   opacity: .9;
-   width: 900px;
-   height: 970px;
-   border-radius: 25px;
-   margin-left: 20%;
-}
-
-h1, h2, h3 {
-   text-align: center;
-   color: white;
+#container {
+   margin: 100px;
    font-family: 'Montserrat', sans-serif;
+   border: 1px solid gray;
+   padding: 40px;
+   background: rgba(236, 230, 228, 0.685);
 }
 
-p {
-   color: #502B3A;
-   font-size: 18px;
-   font-weight: bold;
-}
-
-#intro {
-   font-size: 20px;
-   color: white;
-   font-family: 'Montserrat', sans-serif;
+header {
    text-align: center;
 }
 
-#done-button, #start-button {
-   font-size: 20px; */
-   /* margin-left: 410px; */
-   /* margin-right: 100 px;
-   margin-top: 10px;
-   border-radius: 12px;
-   background-color: white;
-   color: #502B3A;
-   border: 2px solid #502B3A;
-} */
+#timeRemaining {
+   text-align: center;
+}
+
+

@@ -57,6 +57,7 @@ $(document).ready(function () {
         determineScore(parseInt(answerThree), 2);
         determineScore(parseInt(answerFour), 4);
         determineScore(parseInt(answerFive), 2);
+        
         stop();
     });
 

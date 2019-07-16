@@ -15,103 +15,108 @@
     <title>Trivia Game</title>
 </head>
 
-<body background="#">
+<div id="container">
+    <div id="row">
+        <div id="col-sm">
+            <header>
+                <h1>U.S. COAST GUARD</h1>
+                <h4>Trivia Game</h4>
+            </header>
 
-    <div id="container">
-        <div id="row">
-            <div id="col-sm">
-                <h1>TRIVIA GAME</h1>
-                <h4>...this is a trivia game</h4>
-                
-                <br><br>
-                
-                <button id="start">START</button>
+            <br><br>
 
-                <div id="finalScore">
-                    <div id="row">
-                        <div id="col-sm">
-                            <h3 id="userCorrect">Correct Answers: 0</h3>
-                            <h3 id="userIncorrect">Incorrect Answers: 0</h3>
-                            <h3 id="unanswered">Unanswered: 3</h3>
+            <button id="start">START</button>
 
-                            <br><br>
+            <div id="questions">
+                <div id="row">
+                    <div id="col-sm">
+                        <h4 id="timeRemaining">Time Remaining: <span id="seconds">180</span></h4>
 
-                            <p id="correctAnswersText">CORRECT ANSWERS:</p>
-                            <p>1: What year was the Coast Guard founded? <span>Answer: 1790</span></p>
-                            <p>2: Which of the following is not one of the Coast Guard's 11 statutory missions? <span>Answer: Marine Transportation</span></p>
-                            <p>3: Which of these famous actors was actually in the Coast Guard? <span>Answer: Jeff Bridges</span></p>
-                            <p>4: What is the Coast Guard's motto? <span>Answer: Semper Paratus</span></p>
-                            <p>5: Which of the following is a derogatory nickname for someone in the Coast Guard? <span>Answer: Puddle Pirate</span></p>
+                        <br><br>
+
+                        <div id="questionOne">
+                            <h4>Question 1: What year was the Coast Guard founded?</h4>
+                            <input type="radio" name="year" value="1">1775</input>
+                            <input type="radio" name="year" value="2">1812</input>
+                            <input type="radio" name="year" value="3">1790</input>
+                            <input type="radio" name="year" value="4">1820</input>
                         </div>
+
+                        <br><br>
+
+                        <div id="questionTwo">
+                            <h4>Question 2: Which of the following is not one of the Coast Guard's 11 statutory
+                                missions?</h4>
+                            <input type="radio" name="mission" value="1">Marine Transportation</input>
+                            <input type="radio" name="mission" value="2">Ice Operations</input>
+                            <input type="radio" name="mission" value="3">Aids to Navigation</input>
+                            <input type="radio" name="mission" value="4">Search & Rescue</input>
+                        </div>
+
+                        <br><br>
+
+                        <div id="questionThree">
+                            <h4>Question 3: Which of these famous actors was actually in the Coast Guard?</h4>
+                            <input type="radio" name="actor" value="1">Kurt Russel</input>
+                            <input type="radio" name="actor" value="2">Jeff Bridges</input>
+                            <input type="radio" name="actor" value="3">Harrison Ford</input>
+                            <input type="radio" name="actor" value="4">Kevin Costner</input>
+                        </div>
+
+                        <br><br>
+
+                        <div id="questionFour">
+                            <h4>Question 4: What is the Coast Guard's motto?</h4>
+                            <input type="radio" name="motto" value="1">Sember Fortis</input>
+                            <input type="radio" name="motto" value="2">Semper Patriae</input>
+                            <input type="radio" name="motto" value="3">Semper Fidelis</input>
+                            <input type="radio" name="motto" value="4">Semper Paratus</input>
+                        </div>
+
+                        <br><br>
+
+                        <div id="questionFive">
+                            <h4>Question 5: Which of the following is a derogatory nickname for someone in the Coast
+                                Guard?</h4>
+                            <input type="radio" name="nickname" value="1">Squid</input>
+                            <input type="radio" name="nickname" value="2">Puddle Pirate</input>
+                            <input type="radio" name="nickname" value="3">Grunt</input>
+                            <input type="radio" name="nickname" value="4">Swabbie</input>
+                        </div>
+
+                        <br><br>
+
+                        <button id="finishedButton">SUBMIT</button>
                     </div>
                 </div>
+            </div>
 
-                <div id="questions">
-                    <div id="row">
-                        <div id="col-sm">
-                            <h4 id="timeRemaining">Time Remaining: <span id="seconds">180</span></h4>
-                            
-                            <br><br>
+            <div id="finalScore">
+                <div id="row">
+                    <div id="col-sm">
+                        <h3 id="userCorrect"></h3>
+                        <h3 id="userIncorrect"></h3>
+                        <h3 id="unanswered"></h3>
 
-                            <div id="questionOne">
-                                <h4>Question 1: What year was the Coast Guard founded?</h4>
-                                <input type="radio" name="year" value="1">1775</input>
-                                <input type="radio" name="year" value="2">1812</input>
-                                <input type="radio" name="year" value="3">1790</input>
-                                <input type="radio" name="year" value="4">1820</input>
-                            </div>
+                        <br><br>
 
-                            <br><br>
-
-                            <div id="questionTwo">
-                                <h4>Question 2: Which of the following is not one of the Coast Guard's 11 statutory missions?</h4>
-                                <input type="radio" name="mission" value="1">Marine Transportation</input>
-                                <input type="radio" name="mission" value="2">Ice Operations</input>
-                                <input type="radio" name="mission" value="3">Aids to Navigation</input>
-                                <input type="radio" name="mission" value="4">Search & Rescue</input>
-                            </div>
-                            
-                            <br><br>
-
-                            <div id="questionThree">
-                                <h4>Question 3: Which of these famous actors was actually in the Coast Guard?</h4>
-                                <input type="radio" name="actor" value="1">Kurt Russel</input>
-                                <input type="radio" name="actor" value="2">Jeff Bridges</input>
-                                <input type="radio" name="actor" value="3">Harrison Ford</input>
-                                <input type="radio" name="actor" value="4">Kevin Costner</input>
-                            </div>
-
-                            <br><br>
-
-                            <div id="questionFour">
-                                <h4>Question 4: What is the Coast Guard's motto?</h4>
-                                <input type="radio" name="motto" value="1">Sember Fortis</input>
-                                <input type="radio" name="motto" value="2">Semper Patriae</input>
-                                <input type="radio" name="motto" value="3">Semper Fidelis</input>
-                                <input type="radio" name="motto" value="4">Semper Paratus</input>
-                            </div>
-                            
-                            <br><br>
-
-                            <div id="questionFive">
-                                <h4>Question 5: Which of the following is a derogatory nickname for someone in the Coast Guard?</h4>
-                                <input type="radio" name="nickname" value="1">Squid</input>
-                                <input type="radio" name="nickname" value="2">Puddle Pirate</input>
-                                <input type="radio" name="nickname" value="3">Grunt</input>
-                                <input type="radio" name="nickname" value="4">Swabbie</input>
-                            </div>
-
-                            <br><br>
-                                
-                            <button id="finishedButton">FINISHED</button>
-
-                        </div>
+                        <p id="correctAnswersText">CORRECT ANSWERS:</p>
+                        <p>1: What year was the Coast Guard founded? <span>Answer: 1790</span></p>
+                        <p>2: Which of the following is not one of the Coast Guard's 11 statutory missions?
+                            <span>Answer: Marine Transportation</span></p>
+                        <p>3: Which of these famous actors was actually in the Coast Guard? <span>Answer: Jeff
+                                Bridges</span></p>
+                        <p>4: What is the Coast Guard's motto? <span>Answer: Semper Paratus</span></p>
+                        <p>5: Which of the following is a derogatory nickname for someone in the Coast Guard?
+                            <span>Answer: Puddle Pirate</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</div>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
+
 </html>
