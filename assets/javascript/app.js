@@ -45,7 +45,7 @@ $(document).ready(function () {
         }
     }
 
-    $("#finishedButton").click(function () {
+    $("#submit").click(function () {
         var answerOne = $('input[type="radio"][name="year"]:checked').val();
         var answerTwo = $('input[type="radio"][name="mission"]:checked').val();
         var answerThree = $('input[type="radio"][name="actor"]:checked').val();
@@ -57,7 +57,7 @@ $(document).ready(function () {
         determineScore(parseInt(answerThree), 2);
         determineScore(parseInt(answerFour), 4);
         determineScore(parseInt(answerFive), 2);
-        
+
         stop();
     });
 
